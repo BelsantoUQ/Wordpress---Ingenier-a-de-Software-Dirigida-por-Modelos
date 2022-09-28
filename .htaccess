@@ -6,11 +6,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /Ingenier%C3%ADa%20de%20software%20dirigida%20por%20modelos%20-%20wordpress/
+RewriteBase /Wordpress---Ingenier-a-de-Software-Dirigida-por-Modelos/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /Ingenier%C3%ADa%20de%20software%20dirigida%20por%20modelos%20-%20wordpress/index.php [L]
+RewriteRule . /Wordpress---Ingenier-a-de-Software-Dirigida-por-Modelos/index.php [L]
 </IfModule>
 
 # END WordPress
